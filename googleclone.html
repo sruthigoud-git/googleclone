@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><title>Google</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: ;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+          background-image:url(bg2.png);
+          background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        .center{
+            width:60%;
+            height:500px;
+            background-color: transparent;
+            display: flex;
+            justify-content:first baseline;
+            align-items: center;
+            flex-direction: column;
+           
+        
+        }
+        .inputgroup{
+            display: flex;
+            border-radius: 25px;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            width:70%;
+            background-color: white;
+            
+        }
+        .i{
+            font-size: 30px;
+            
+        }
+        .text-feild{
+            font-size: 20px;
+            outline: none;
+            border: none;
+            padding: 10px;
+            width: 500px;
+
+        }
+        .favcard{
+            width:90px;
+            height:90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .favcard:hover{
+            background-color: rgba(116, 110, 110, 0.258);
+           .dots{
+            opacity: 1;
+           } 
+        }
+        .circle{
+            width:40%;
+            height:40%;
+            border-radius:50%;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+        .insta{
+            width:100%;
+             border-radius:50% ;
+
+        }
+        .leetcode{
+            width:100%;
+            border-radius: 50%;
+        }
+        .github{
+            width:100%;
+            border-radius: 50%;
+        }
+        .linkedin{
+            width:100%;
+            border-radius: 50%;
+        }
+        .favlist{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:40px;
+            margin-top: 50px;
+        }
+        .dots{
+            font-size: 20px;
+            position: relative;
+            left: 30px;
+            color: black;
+            opacity: 0;
+            transition: 0.2s all ease;
+        }
+        .topright{
+            width: 200px;
+            height: 50px;
+            /* background-color: rgb(192, 175, 175); */
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .grid{
+            width: 2px;
+        }
+        .chan{
+            width:40px;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <img src="google.png" alt=""width="30%" style="margin-bottom:40px;">
+            <div class="inputgroup">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <form action="https://google.com/search">
+                <input type="text" class="text-feild" placeholder="Search Google or type a URL"name="q">
+            </form>
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-solid fa-camera"></i>
+            
+            </div>
+       <div class="favlist">
+        <div class="favcard">
+            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+            <div class="circle">
+                <img src="leetcode.png" class="leetcode" width="100%" alt="">
+            </div>
+            <p>Leetcode</p>
+
+
+        </div>
+        <div class="favcard">
+            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+            <div class="circle">
+                <img src="github.png" class="github" width="100%" alt="">
+            </div>
+            <p>Github</p>
+
+
+        </div>
+        <div class="favcard">
+            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+            <div class="circle">
+                <img src="linkedin.png" class="linkedin" width="100%" alt="">
+            </div>
+            <p>Linkedin</p>
+
+
+        </div>
+        <div class="favcard">
+            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+            <div class="circle">
+                <img src="insta.png" class="insta" width="100%" alt="">
+            </div>
+            <p>Instagram</p>
+
+
+        </div>
+        <div class="favcard">
+            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+            <div class="circle">
+                <img src="plus.png" class="addshortcut" width="100%" alt="">
+            </div>
+            <p>Add</p>
+
+
+        </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <div class="topright">
+        <p>Gmail</p>
+        <p>Images</p>
+        <div class="apps">
+            <i class="fa-solid fa-ellipsis-vertical grid"></i>
+        <i class="fa-solid fa-ellipsis-vertical grid"></i>
+        <i class="fa-solid fa-ellipsis-vertical grid"></i>
+        </div>
+        <img src="chan.gif" alt="" class="chan">
+    </div>
+</body>
+</html>
